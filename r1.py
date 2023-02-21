@@ -17,7 +17,7 @@ def convert(lines):
         elif line == 'Tom':
             person = 'Tom'
             continue
-
+        if person: #這行是如果person有值的話,會寫入到空清單。
         new.append(person + ':' + line)
     return new
 
